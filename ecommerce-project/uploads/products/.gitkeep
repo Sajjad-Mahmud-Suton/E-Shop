@@ -1,0 +1,16 @@
+# Product Images Upload Directory
+
+This directory contains uploaded product images.
+
+## Structure
+- Original images are stored here directly
+- Thumbnails are generated automatically (if implemented)
+
+## Notes
+- Maximum file size: 10MB
+- Allowed formats: JPG, JPEG, PNG, GIF, WEBP
+- Images are renamed with unique identifiers to prevent conflicts
+
+## Security
+- PHP execution is disabled in this directory via .htaccess
+- Direct access to files is allowed for image display

@@ -1,0 +1,14 @@
+# Category Images Upload Directory
+
+This directory contains uploaded category images.
+
+## Structure
+- Category banner/thumbnail images are stored here
+
+## Notes
+- Maximum file size: 5MB
+- Allowed formats: JPG, JPEG, PNG, GIF, WEBP
+- Images are renamed with unique identifiers
+
+## Security
+- PHP execution is disabled in this directory
