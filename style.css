@@ -1,0 +1,195 @@
+/* ==================== Global Styles ==================== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==================== Navbar Styles ==================== */
+.navbar {
+    background-color: #2d3e50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f1c40f !important;
+}
+
+/* ==================== Category Menu ==================== */
+.category-menu {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.category-menu h5 {
+    color: #2d3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.category-menu li {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category-menu li i {
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+/* Category Specific Colors */
+.category-projects { background: #e74c3c; }
+.category-printer { background: #3498db; }
+.category-accessories { background: #2ecc71; }
+.category-drones { background: #f1c40f; color: #333 !important; }
+.category-electrical { background: #9b59b6; }
+
+.category-menu li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ==================== Carousel Styles ==================== */
+#mainCarousel {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6%;
+}
+
+/* ==================== Product Cards ==================== */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #2d3e50;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #2d3e50;
+    border: none;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #f1c40f;
+    transform: scale(1.05);
+}
+
+/* ==================== Modal Styles ==================== */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    background: #2d3e50;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Login/Register Modal */
+#loginRegisterModal .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 25px;
+}
+
+#loginRegisterModal .nav-link {
+    color: #666;
+    border: none !important;
+    font-size: 1.1rem;
+}
+
+#loginRegisterModal .nav-link.active {
+    color: #2d3e50 !important;
+    border-bottom: 3px solid #2d3e50 !important;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 5;
+    color: #666;
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+    .category-menu {
+        margin-bottom: 20px;
+    }
+    
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 180px;
+    }
+    
+    .modal-dialog {
+        margin: 10px;
+    }
+}
